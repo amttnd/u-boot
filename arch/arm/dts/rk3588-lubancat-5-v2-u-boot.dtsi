@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: GPL-2.0+
+
+#include "rk3588-u-boot.dtsi"
+
+&saradc {
+	bootph-pre-ram;
+	vdd-microvolts = <1800000>;
+};
+
+&sdhci {
+	cap-mmc-highspeed;
+	mmc-hs200-1_8v;
+};
